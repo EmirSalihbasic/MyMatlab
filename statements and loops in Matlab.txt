@@ -1,0 +1,94 @@
+% If Statement
+
+MyInput = input ('lets add a number: ');
+
+if MyInput < 0 
+     disp("you are negative!")   % disp is for display
+else if (MyInput >= 0) && (MyInput <= 100)
+     disp("you are right one")
+else
+     disp("Wow, thats a big number")
+end    
+end
+
+% you can test the statement with writing the script name in the command window and after that you write the number that you want to test.
+
+
+
+
+
+% Switch statement
+
+n = input ('Enter a number: ');
+m = input ('Enter another number: ');
+action = input ('What calculation should i perform: ');
+
+switch action
+       case 'add'
+          output = n + m
+       case 'subtract'
+          output = n - m
+       case 'multiply' 
+          output = n * m
+       case 'divide'
+          output = n / m
+       otherwise      % default case in other languages
+          output ("sry, I can't do that.") 
+end
+
+Don't forget to add single quotes with the "operation"
+
+
+
+
+
+
+% for loops
+
+for i = 1:10
+    disp (i)
+end
+
+
+for i = 1:2:10
+    disp (i)
+end
+
+
+n = 25;
+step = 5;
+for i = 0:step:n
+    disp (i)
+end
+
+
+
+
+% while loop
+
+
+value = 50;
+n = 5;
+while value > 0;
+       value = value - n;
+       disp (value)
+end
+
+
+
+
+
+threshold = 8;
+
+while true
+     num = threshold
+     if num > threshold 
+        disp ('Over the limit! Shut down!')
+        break
+     end
+     disp ('Everything is okay.')
+end
+
+
+
+

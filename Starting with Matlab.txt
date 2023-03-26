@@ -1,0 +1,76 @@
+% Windows in Matlabs
+% 1.In the center we can notice the command window, simillar to other IDEs. (this is the place when we write our code)
+% 2.On the right side we can see the Workspace. There are all variables we created in this session. (we can delete this variables, on the workspace and also on command window)
+% 3.On the left we have a folder view. 
+% 4.Matlab also contains the command history, that we can get when we click on the command history. We can edit some codes from the command history.
+
+
+
+% Simple lines of codes
+2+2      % We can do calculations on the command line with only writing the numbers
+cos(0)     
+MyVar = 4+4     %creating simple variable
+clc                 
+clear all
+clear MyVar    %clearing the variable
+MyVar = 4; (semicolon is used to continue with writing, without showing the output)
+MyVar2 = 2
+
+
+
+% a) Scalars, Vectors, Matrixes
+MyScalar = 10
+MyVector = [ 1 2 ]
+MyVectorCol = [ 1 2 3]     % Column vector
+MyMatrix = [5 6 7 ; 1 2 4 ; 1 2 3]
+
+
+
+% b) extracting the numbers from Matrixes. We need to write Matrix name and two arguments. MyMatrix (row, column)
+MyMatrix (1 , 2)   %the otput would be the number from the first row and the second column
+MyMatrix (2 , :)   %this would give us an output, all numbers in the second row. 
+MyMatrix (3 , 2 : 3)  %this would give us the row 3, but only columns 2 and 3, not all of them.
+
+
+
+% c) variable classes
+MyPie = Pi   % output is the pi number with 4 decimal points
+format long  % this would give us longer format, we can see that when we again write MyPie
+MyBool = true % result is 1
+MyBool = false % result is 0
+
+
+
+% d) cell arrays
+MyCell = {[ 1 2 3] [ 2 3 5] ; 'v1' 'v2'}  % two vectors would be identified with two strings. To acces it, we can do it with MyV2 = MyCell{1,2}
+
+
+
+% e) scripts
+% you can create them manually with right click in the folder view. You can open it with writing "edit myNewScript" in the command line.
+MyMath = randi (3,3) % This we can write in script. Randi means random integer, it would create matrix randomly. 
+MyMathTranspose = MyMath';   % very easy way to transpose the matrix. We can inspect in the command windows with "MyMathTranspose
+
+
+
+% f) populate matrices
+MyZeros = zeros (20 , 30);
+MyOnes = ones (10 , 10);
+MyRandomInt = randi (5 , 10);
+
+
+
+%scalar operations with Matrixes
+M1 = [ 1 1 ; 2 2];
+M2 = [ 1 -1 ; 2 -2];
+M1 * M2 
+
+M1.* M2 %This will multiply two matrixes element by element.
+
+
+
+
+
+
+
+
